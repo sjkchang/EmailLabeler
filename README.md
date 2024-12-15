@@ -1,3 +1,35 @@
+# Project Background
+
+## Overview
+
+The "Gmail Labeler" Chrome extension is designed to enhance email management within Gmail by automatically labeling emails based on user-defined rules. This project integrates Gmail through its API and utilizes OpenAI's GPT-4 to analyze email content and categorize it intelligently, making it easier for users to organize and prioritize their email interactions.
+
+## Technology Stack
+
+-   **Frontend**: The Chrome extension is developed using React, allowing for a dynamic and responsive user interface. Vite is used as the build tool for faster development and optimized production builds.
+-   **Backend**: NestJS serves as the backend framework, providing a scalable and modular architecture for handling requests, integrating with databases, and communicating with external APIs like Gmail and OpenAI.
+-   **Database**: MongoDB is employed to store user data and rule configurations securely. It offers flexibility and ease of integration with our NestJS server.
+-   **APIs**:
+    -   **Gmail API**: Integrates with Gmail to fetch, modify, and label emails directly through the extension.
+    -   **OpenAI API**: Utilizes advanced NLP models to analyze and categorize email content accurately.
+
+## Features
+
+-   **Rule-Based Labeling**: Users can create custom rules that define how emails should be labeled based on the content, sender, and other criteria.
+-   **Automatic Categorization**: Leverages GPT-4 to intelligently analyze and categorize emails, reducing the manual effort required to manage email flows.
+-   **User Interface**:
+    -   **Main Extension Popup**: Allows users to view and manage their labeling rules directly from the Chrome toolbar.
+    -   **Create New Rule Modal**: Provides a simple and intuitive interface for creating new rules without complex configurations.
+    -   **Labeled Inbox View**: Shows the result of automatic labeling directly in the Gmail interface, enhancing the email management experience.
+
+## Screenshots
+
+1. **Main Extension Popup with Rules**: [Insert screenshot description and path here]
+2. **Create New Rule Modal**: [Insert screenshot description and path here]
+3. **Gmail Inbox with Labeled Emails**: [Insert screenshot description and path here]
+
+This project not only optimizes email management but also showcases the practical application of AI in everyday tools, making advanced technology accessible and useful for enhancing productivity.
+
 # Project Setup Guide
 
 This guide provides detailed instructions on how to set up the React-based Chrome extension built using Vite and the NestJS backend server.
@@ -15,7 +47,7 @@ Before you start, ensure you have the following installed:
 
 ### Initial Preparation of the Chrome Extension
 
-This inital setup is to obtain a chrome extension id which is required to generate a client id and key for google oauth services.
+This initial setup is to obtain a chrome extension id which is required to generate a client id and key for google oauth services.
 
 1. Navigate to the `/chrome-extension` directory:
     ```sh
@@ -112,7 +144,7 @@ This inital setup is to obtain a chrome extension id which is required to genera
     ```
 3. Reload the unpacked extension in `chrome://extensions/` to apply changes.
 
-The final version of the extension should now be built and loaded into your google chrome browser. It is not ready to use as you must first add test users for it in google cloud, and spin up the backend/server.
+The final version of the extension should now be built and loaded into your Google Chrome browser. It is not ready to use as you must first add test users for it in Google Cloud, and spin up the backend/server.
 
 ### Configuring Test Users
 
@@ -166,7 +198,7 @@ The final version of the extension should now be built and loaded into your goog
     npm run start
     ```
 
-The application should now be fully operational. Click on the brower extension to add filtering rules.
+The application should now be fully operational. Click on the browser extension to add filtering rules.
 
 ## Additional Information
 
