@@ -202,3 +202,21 @@ The application should now be fully operational. Click on the browser extension 
 -   **NestJS Documentation**: For more details on working with NestJS, visit the [official NestJS documentation](https://nestjs.com/).
 -   **React and Vite Documentation**: Learn more about React and Vite by visiting their official documentation pages at [React documentation](https://reactjs.org/) and [Vite documentation](https://vitejs.dev/).
 -   **Chrome Extensions Development**: For more guidance on developing Chrome extensions, refer to the [Chrome Developers documentation](https://developer.chrome.com/docs/extensions/mv3/getstarted/).
+
+## Testing
+
+The server-side components of the Gmail Labeler are covered with a suite of tests to ensure the reliability and correctness of features such as email classification, CRUD operations for rules, and actual labeling via the Gmail API.
+
+### Test Suites
+
+-   **Email Classification**: Tests that the system accurately classifies emails based on content and user-defined rules using GPT-4.
+-   **Rule CRUD**: Ensures that create, read, update, and delete operations for rules work seamlessly and persist changes correctly in MongoDB.
+-   **Email fetching and Labeling via Gmail API**: Verifies that the integration with the Gmail API correctly applies labels to emails as specified by the rules.
+
+### Test Results
+
+Below is a screenshot of the test results showing all tests passing, which demonstrates the operational integrity of the backend components:
+
+![Test Results](https://github.com/sjkchang/EmailLabeler/blob/main/docs/server-tests.png)
+
+This testing ensures that the Gmail Labeler operates as expected under various scenarios and maintains high standards of quality and reliability.
