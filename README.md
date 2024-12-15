@@ -19,14 +19,11 @@ The "Gmail Labeler" Chrome extension is designed to enhance email management wit
 -   **Automatic Categorization**: Leverages GPT-4 to intelligently analyze and categorize emails, reducing the manual effort required to manage email flows.
 -   **User Interface**:
     -   **Main Extension Popup**: Allows users to view and manage their labeling rules directly from the Chrome toolbar.
+        ![Main Extension Popup Screenshot](https://github.com/sjkchang/EmailLabeler/blob/main/docs/Extension.png)
     -   **Create New Rule Modal**: Provides a simple and intuitive interface for creating new rules without complex configurations.
+        ![Main Extension Popup Screenshot](https://github.com/sjkchang/EmailLabeler/blob/main/docs/NewRuleModal.png)
     -   **Labeled Inbox View**: Shows the result of automatic labeling directly in the Gmail interface, enhancing the email management experience.
-
-## Screenshots
-
-1. **Main Extension Popup with Rules**: [Insert screenshot description and path here]
-2. **Create New Rule Modal**: [Insert screenshot description and path here]
-3. **Gmail Inbox with Labeled Emails**: [Insert screenshot description and path here]
+        ![Main Extension Popup Screenshot](https://github.com/sjkchang/EmailLabeler/blob/main/docs/Extension-with-Gmail.png)
 
 This project not only optimizes email management but also showcases the practical application of AI in everyday tools, making advanced technology accessible and useful for enhancing productivity.
 
